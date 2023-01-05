@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divider</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="flex justify-center h-screen py-36">
+    <div class="flex-col justify-center text-center w-full max-w-md space-y-8">
+        <div class="flex justify-center">
+            <h1 class="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900">편뽑기</h1>
+        </div>
+        <form class="flex justify-center mt-8 space-y-6" action="">
+            <div class="-space-y-px rounded-md shadow-sm border border-gray-300 p-4">
+                <div class="flex-col">
+                    <label for="num" class="mb-2">인원 수</label>
+                    <input type="text" id="num" class="p-2 border border-gray-300 rounded-md mb-2">
+                    <button class="py-2 px-4 rounded-md text-white bg-indigo-600">나누기</button>
+                </div>
+
+            </div>
+        </form>
+        <div class="flex justify-around">
+            <div class="flex-col">
+                <h2>team A</h2>
+                <ul id="left" class="border border-gray-300 p-2">
+                </ul>
+            </div>
+            <div class="flex-col">
+                <h2>team B</h2>
+                <ul id="right" class="border border-gray-300 p-2">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="func.js"></script>
+</body>
+
+</html>
